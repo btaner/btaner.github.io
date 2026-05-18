@@ -1,7 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>btaner</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d0d0f; --bg2: #131316; --border: #1e1e24;
+      --text: #e8e8ed; --muted: #6b6b7a;
+      --accent: #7c6af7; --accent2: #a78bfa;
+      --mono: 'SF Mono','Fira Code','Cascadia Code',monospace;
+      --sans: -apple-system,BlinkMacSystemFont,'Segoe UI','Inter',sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { background:var(--bg); color:var(--text); font-family:var(--sans); font-size:16px; line-height:1.6; min-height:100vh; }
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:1.25rem 2.5rem; border-bottom:1px solid transparent; transition:background .3s,border-color .3s,backdrop-filter .3s; }
+    nav.scrolled { background:rgba(13,13,15,.85); border-color:var(--border); backdrop-filter:blur(12px); }
+    .nav-logo { font-family:var(--mono); font-size:.9rem; color:var(--accent2); text-decoration:none; letter-spacing:.02em; }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a { color:var(--muted); text-decoration:none; font-size:.875rem; transition:color .2s; }
+    .nav-links a:hover { color:var(--text); }
+    #hero { min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding:8rem 2.5rem 4rem; max-width:780px; margin:0 auto; }
+    .hero-eyebrow { font-family:var(--mono); font-size:.8rem; color:var(--accent); letter-spacing:.12em; text-transform:uppercase; margin-bottom:1.25rem; opacity:0; animation:fadeUp .6s .2s forwards; }
+    .hero-name { font-size:clamp(2.5rem,6vw,4.5rem); font-weight:700; letter-spacing:-.02em; line-height:1.1; margin-bottom:1.25rem; opacity:0; animation:fadeUp .6s .35s forwards; }
+    .hero-name span { background:linear-gradient(135deg,var(--accent2) 0%,#c084fc 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .hero-desc { font-size:1.15rem; color:var(--muted); max-width:520px; margin-bottom:2.5rem; opacity:0; animation:fadeUp .6s .5s forwards; }
+    .hero-actions { display:flex; gap:1rem; flex-wrap:wrap; opacity:0; animation:fadeUp .6s .65s forwards; }
+    .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.65rem 1.4rem; border-radius:8px; font-size:.9rem; font-weight:500; text-decoration:none; transition:all .2s; cursor:pointer; }
+    .btn-primary { background:var(--accent); color:#fff; border:1px solid var(--accent); }
+    .btn-primary:hover { background:var(--accent2); border-color:var(--accent2); transform:translateY(-1px); box-shadow:0 8px 24px rgba(124,106,247,.3); }
+    .btn-ghost { background:transparent; color:var(--text); border:1px solid var(--border); }
+    .btn-ghost:hover { border-color:var(--muted); transform:translateY(-1px); }
+    section { max-width:780px; margin:0 auto; padding:5rem 2.5rem; }
+    .section-label { font-family:var(--mono); font-size:.75rem; color:var(--accent); letter-spacing:.12em; text-transform:uppercase; margin-bottom:1rem; }
+    .section-title { font-size:1.9rem; font-weight:700; letter-spacing:-.02em; margin-bottom:1.5rem; }
+    .divider { border:none; border-top:1px solid var(--border); }
+    #about p { color:var(--muted); font-size:1.05rem; max-width:600px; margin-bottom:1rem; }
+    #about p:last-child { margin-bottom:0; }
+    #about p strong { color:var(--text); font-weight:500; }
+    .skills { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:2rem; }
+    .skill-tag { font-family:var(--mono); font-size:.75rem; padding:.3rem .75rem; border-radius:4px; background:var(--bg2); border:1px solid var(--border); color:var(--muted); letter-spacing:.03em; }
+    .projects-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:1rem; margin-top:.5rem; }
+    .project-card { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:1.5rem; text-decoration:none; color:inherit; transition:border-color .2s,transform .2s,box-shadow .2s; display:flex; flex-direction:column; gap:.6rem; }
+    .project-card:hover { border-color:var(--accent); transform:translateY(-2px); box-shadow:0 12px 32px rgba(0,0,0,.4); }
+    .project-header { display:flex; align-items:center; justify-content:space-between; }
+    .project-icon { font-size:1.1rem; }
+    .project-arrow { color:var(--muted); font-size:.9rem; transition:color .2s,transform .2s; }
+    .project-card:hover .project-arrow { color:var(--accent2); transform:translate(2px,-2px); }
+    .project-name { font-size:1rem; font-weight:600; color:var(--text); }
+    .project-desc { font-size:.875rem; color:var(--muted); line-height:1.5; }
+    .project-tags { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:auto; padding-top:.5rem; }
+    .project-tag { font-family:var(--mono); font-size:.7rem; padding:.2rem .55rem; border-radius:4px; background:rgba(124,106,247,.1); color:var(--accent2); border:1px solid rgba(124,106,247,.2); }
+    footer { border-top:1px solid var(--border); padding:2rem 2.5rem; display:flex; justify-content:space-between; align-items:center; max-width:780px; margin:0 auto; flex-wrap:wrap; gap:1rem; }
+    footer p { font-size:.8rem; color:var(--muted); font-family:var(--mono); }
+    .footer-links { display:flex; gap:1.25rem; }
+    .footer-links a { color:var(--muted); text-decoration:none; font-size:.875rem; transition:color .2s; display:inline-flex; align-items:center; gap:.4rem; }
+    .footer-links a:hover { color:var(--accent2); }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+    @media(max-width:600px){nav{padding:1rem 1.25rem}#hero{padding:7rem 1.25rem 3rem}section{padding:3.5rem 1.25rem}footer{padding:1.5rem 1.25rem}.projects-grid{grid-template-columns:1fr}}
+  </style>
+</head>
 <body>
-<h1>Hello World -- </h1>
-<p></p>
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">~/btaner</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="https://github.com/btaner" target="_blank" rel="noopener">GitHub ↗</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <p class="hero-eyebrow">Hello, world</p>
+    <h1 class="hero-name">I'm <span>btaner</span>.</h1>
+    <p class="hero-desc">I build things for the web — clean interfaces, resilient backends, and the glue that holds them together.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View work <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a href="https://github.com/btaner" target="_blank" rel="noopener" class="btn btn-ghost"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.92.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> GitHub</a>
+    </div>
+  </section>
+
+  <hr class="divider" style="max-width:780px;margin:0 auto;">
+
+  <section id="about">
+    <p class="section-label">About</p>
+    <h2 class="section-title">A bit about me</h2>
+    <p>I'm a <strong>software engineer</strong> who enjoys working across the stack — from designing APIs that are a pleasure to use, to polishing the last pixel of a UI.</p>
+    <p>I care deeply about writing code that is <strong>readable, tested, and maintainable</strong>. When I'm not coding I'm usually reading, hiking, or tinkering with side projects.</p>
+    <div class="skills">
+      <span class="skill-tag">TypeScript</span><span class="skill-tag">Python</span><span class="skill-tag">React</span><span class="skill-tag">Node.js</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">Docker</span><span class="skill-tag">Git</span><span class="skill-tag">Linux</span>
+    </div>
+  </section>
+
+  <hr class="divider" style="max-width:780px;margin:0 auto;">
+
+  <section id="projects">
+    <p class="section-label">Work</p>
+    <h2 class="section-title">Selected projects</h2>
+    <div class="projects-grid">
+      <a href="https://github.com/btaner" target="_blank" rel="noopener" class="project-card">
+        <div class="project-header"><span class="project-icon">⚙️</span><span class="project-arrow">↗</span></div>
+        <p class="project-name">Project One</p>
+        <p class="project-desc">A short description of what this project does and the problem it solves.</p>
+        <div class="project-tags"><span class="project-tag">TypeScript</span><span class="project-tag">React</span></div>
+      </a>
+      <a href="https://github.com/btaner" target="_blank" rel="noopener" class="project-card">
+        <div class="project-header"><span class="project-icon">🛠️</span><span class="project-arrow">↗</span></div>
+        <p class="project-name">Project Two</p>
+        <p class="project-desc">Another project — replace this with your own work and a link to the repo.</p>
+        <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">PostgreSQL</span></div>
+      </a>
+      <a href="https://github.com/btaner" target="_blank" rel="noopener" class="project-card">
+        <div class="project-header"><span class="project-icon">✨</span><span class="project-arrow">↗</span></div>
+        <p class="project-name">Project Three</p>
+        <p class="project-desc">Add a third highlight here — open-source tools, experiments, or shipped products.</p>
+        <div class="project-tags"><span class="project-tag">Node.js</span><span class="project-tag">Docker</span></div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 btaner</p>
+    <div class="footer-links">
+      <a href="https://github.com/btaner" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.92.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); }, { passive: true });
+  </script>
 </body>
 </html>
