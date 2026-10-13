@@ -1,0 +1,206 @@
+{
+  "airport": {
+    "iata": "YYZ",
+    "name": "Toronto Pearson International Airport",
+    "city": "Toronto",
+    "country": "Canada",
+    "timezone": "America/Toronto"
+  },
+  "terminals": [
+    { "code": "1", "name": "Terminal 1", "sort_order": 1 },
+    { "code": "3", "name": "Terminal 3", "sort_order": 2 }
+  ],
+  "facilities": [
+    {
+      "slug": "t1-tim-hortons-arrivals",
+      "name": "Tim Hortons",
+      "terminal": "1",
+      "category": "cafe",
+      "zone": "landside",
+      "gate_area": "Arrivals level",
+      "description": "Coffee and quick bites before security."
+    },
+    {
+      "slug": "t1-boccone-trattoria-veloce",
+      "name": "Boccone Trattoria Veloce",
+      "terminal": "1",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "D gates",
+      "description": "Italian counter-service restaurant from chef Mark McEwan."
+    },
+    {
+      "slug": "t1-bar-milano",
+      "name": "Bar Milano",
+      "terminal": "1",
+      "category": "bar",
+      "zone": "airside",
+      "gate_area": "D gates",
+      "description": "Italian-style bar with wine, cocktails and small plates."
+    },
+    {
+      "slug": "t1-starbucks-d-gates",
+      "name": "Starbucks",
+      "terminal": "1",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "D gates",
+      "description": "Coffee and pastries near the domestic gates."
+    },
+    {
+      "slug": "t1-maple-leaf-lounge-domestic",
+      "name": "Air Canada Maple Leaf Lounge (Domestic)",
+      "terminal": "1",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "D gates",
+      "description": "Air Canada lounge for domestic departures.",
+      "access_info": "Air Canada / Star Alliance eligible tickets and status, Maple Leaf Club membership",
+      "url": "https://www.aircanada.com/"
+    },
+    {
+      "slug": "t1-maple-leaf-lounge-international",
+      "name": "Air Canada Maple Leaf Lounge (International)",
+      "terminal": "1",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "E gates",
+      "description": "Air Canada lounge for international departures.",
+      "access_info": "Air Canada / Star Alliance business class and eligible status",
+      "url": "https://www.aircanada.com/"
+    },
+    {
+      "slug": "t1-signature-suite",
+      "name": "Air Canada Signature Suite",
+      "terminal": "1",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "E gates",
+      "description": "Restaurant-style premium lounge with à la carte dining.",
+      "access_info": "Air Canada Signature Class international passengers only",
+      "url": "https://www.aircanada.com/"
+    },
+    {
+      "slug": "t1-plaza-premium-lounge-international",
+      "name": "Plaza Premium Lounge",
+      "terminal": "1",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "E gates",
+      "description": "Pay-per-use lounge with hot food and showers.",
+      "access_info": "Paid entry, Priority Pass, select credit cards (check current terms)",
+      "url": "https://www.plazapremiumlounge.com/"
+    },
+    {
+      "slug": "t1-duty-free",
+      "name": "Duty Free",
+      "terminal": "1",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "After international security",
+      "description": "Duty free spirits, fragrance and Canadian souvenirs."
+    },
+    {
+      "slug": "t1-pharmacy",
+      "name": "Pharmacy",
+      "terminal": "1",
+      "category": "pharmacy",
+      "zone": "landside",
+      "gate_area": "Public area",
+      "description": "Pharmacy and health essentials. Name and exact location to be confirmed."
+    },
+    {
+      "slug": "t1-multifaith-prayer-room",
+      "name": "Multi-faith prayer room",
+      "terminal": "1",
+      "category": "prayer_room",
+      "zone": "landside",
+      "gate_area": "Public area",
+      "description": "Quiet space for prayer and reflection.",
+      "url": "https://www.torontopearson.com/"
+    },
+    {
+      "slug": "t1-restrooms-d-gates",
+      "name": "Restrooms",
+      "terminal": "1",
+      "category": "restroom",
+      "zone": "airside",
+      "gate_area": "D gates",
+      "description": "Restrooms along the D pier, including family and accessible rooms."
+    },
+    {
+      "slug": "t1-charging-gates",
+      "name": "Charging stations",
+      "terminal": "1",
+      "category": "charging",
+      "zone": "airside",
+      "gate_area": "Gate seating, all piers",
+      "description": "Outlets and USB ports at gate seating and tablet-equipped dining areas."
+    },
+    {
+      "slug": "t3-starbucks-landside",
+      "name": "Starbucks",
+      "terminal": "3",
+      "category": "cafe",
+      "zone": "landside",
+      "gate_area": "Departures level",
+      "description": "Coffee before security."
+    },
+    {
+      "slug": "t3-plaza-premium-lounge",
+      "name": "Plaza Premium Lounge",
+      "terminal": "3",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "International gates",
+      "description": "Pay-per-use lounge for international departures.",
+      "access_info": "Paid entry, Priority Pass, select credit cards (check current terms)",
+      "url": "https://www.plazapremiumlounge.com/"
+    },
+    {
+      "slug": "t3-sports-bar",
+      "name": "Sports bar",
+      "terminal": "3",
+      "category": "bar",
+      "zone": "airside",
+      "gate_area": "B gates",
+      "description": "Beer, cocktails and pub food with game screens. Exact name to be confirmed."
+    },
+    {
+      "slug": "t3-food-hall",
+      "name": "Food hall",
+      "terminal": "3",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Central area after security",
+      "description": "Several quick-service counters under one roof. Vendors to be confirmed."
+    },
+    {
+      "slug": "t3-news-convenience",
+      "name": "News & convenience store",
+      "terminal": "3",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "C gates",
+      "description": "Snacks, drinks, magazines and travel accessories."
+    },
+    {
+      "slug": "t3-restrooms",
+      "name": "Restrooms",
+      "terminal": "3",
+      "category": "restroom",
+      "zone": "airside",
+      "gate_area": "B and C gates",
+      "description": "Restrooms near the gate areas."
+    },
+    {
+      "slug": "t3-charging",
+      "name": "Charging stations",
+      "terminal": "3",
+      "category": "charging",
+      "zone": "airside",
+      "gate_area": "Gate seating",
+      "description": "Power outlets at seating in gate areas."
+    }
+  ]
+}

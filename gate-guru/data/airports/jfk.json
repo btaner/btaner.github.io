@@ -1,0 +1,233 @@
+{
+  "airport": {
+    "iata": "JFK",
+    "name": "John F. Kennedy International Airport",
+    "city": "New York",
+    "country": "United States",
+    "timezone": "America/New_York"
+  },
+  "terminals": [
+    { "code": "1", "name": "Terminal 1", "sort_order": 1 },
+    { "code": "4", "name": "Terminal 4", "sort_order": 2 },
+    { "code": "5", "name": "Terminal 5", "sort_order": 3 },
+    { "code": "8", "name": "Terminal 8", "sort_order": 4 }
+  ],
+  "facilities": [
+    {
+      "slug": "t1-air-france-lounge",
+      "name": "Air France Lounge",
+      "terminal": "1",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "Lounge for Air France and SkyTeam premium passengers.",
+      "access_info": "Air France / SkyTeam business class, eligible Flying Blue and SkyTeam Elite Plus status"
+    },
+    {
+      "slug": "t1-duty-free",
+      "name": "Duty Free",
+      "terminal": "1",
+      "category": "shop",
+      "zone": "airside",
+      "description": "Duty free shopping for international departures."
+    },
+    {
+      "slug": "t1-cafe-landside",
+      "name": "Coffee counter",
+      "terminal": "1",
+      "category": "cafe",
+      "zone": "landside",
+      "gate_area": "Departures hall",
+      "description": "Coffee and grab-and-go before security. Vendor to be confirmed."
+    },
+    {
+      "slug": "t1-restrooms",
+      "name": "Restrooms",
+      "terminal": "1",
+      "category": "restroom",
+      "zone": "airside",
+      "description": "Restrooms near the gates."
+    },
+    {
+      "slug": "t4-shake-shack",
+      "name": "Shake Shack",
+      "terminal": "4",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Main concourse",
+      "description": "Burgers, fries and shakes."
+    },
+    {
+      "slug": "t4-centurion-lounge",
+      "name": "The Centurion Lounge",
+      "terminal": "4",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "Near B gates",
+      "description": "American Express lounge with chef-driven food and a cocktail bar.",
+      "access_info": "Amex Platinum and Centurion cardholders (guest rules apply)",
+      "url": "https://www.thecenturionlounge.com/"
+    },
+    {
+      "slug": "t4-delta-sky-club",
+      "name": "Delta Sky Club",
+      "terminal": "4",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "B gates",
+      "description": "Delta's lounge with food, bar and workspaces.",
+      "access_info": "Sky Club membership, Delta One, Amex Platinum when flying Delta (check current limits)",
+      "url": "https://www.delta.com/"
+    },
+    {
+      "slug": "t4-starbucks-airside",
+      "name": "Starbucks",
+      "terminal": "4",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "B gates",
+      "description": "Coffee near the Delta gates."
+    },
+    {
+      "slug": "t4-bar-concourse",
+      "name": "Cocktail bar",
+      "terminal": "4",
+      "category": "bar",
+      "zone": "airside",
+      "gate_area": "Main concourse",
+      "description": "Bar with seating overlooking the concourse. Exact name to be confirmed."
+    },
+    {
+      "slug": "t4-pharmacy-shop",
+      "name": "Health & pharmacy shop",
+      "terminal": "4",
+      "category": "pharmacy",
+      "zone": "airside",
+      "gate_area": "Main concourse",
+      "description": "Over-the-counter medicine and travel health items. Name to be confirmed."
+    },
+    {
+      "slug": "t4-interfaith-chapels",
+      "name": "Chapels & prayer room",
+      "terminal": "4",
+      "category": "prayer_room",
+      "zone": "landside",
+      "description": "Interfaith chapels and a prayer room for travelers and staff.",
+      "url": "https://www.jfkairport.com/"
+    },
+    {
+      "slug": "t4-restrooms-b-gates",
+      "name": "Restrooms",
+      "terminal": "4",
+      "category": "restroom",
+      "zone": "airside",
+      "gate_area": "B gates",
+      "description": "Restrooms along the B concourse."
+    },
+    {
+      "slug": "t4-charging",
+      "name": "Charging stations",
+      "terminal": "4",
+      "category": "charging",
+      "zone": "airside",
+      "gate_area": "Gate seating",
+      "description": "Outlets and USB ports at gate seating."
+    },
+    {
+      "slug": "t5-cibo-express",
+      "name": "Cibo Express Gourmet Market",
+      "terminal": "5",
+      "category": "shop",
+      "zone": "airside",
+      "description": "Grab-and-go market with sandwiches, salads, snacks and drinks."
+    },
+    {
+      "slug": "t5-deep-blue-sushi",
+      "name": "Deep Blue Sushi",
+      "terminal": "5",
+      "category": "restaurant",
+      "zone": "airside",
+      "description": "Sushi and Japanese small plates."
+    },
+    {
+      "slug": "t5-artichoke-basilles-pizza",
+      "name": "Artichoke Basille's Pizza",
+      "terminal": "5",
+      "category": "restaurant",
+      "zone": "airside",
+      "description": "New York pizza by the slice."
+    },
+    {
+      "slug": "t5-jetblue-lounge",
+      "name": "JetBlue lounge",
+      "terminal": "5",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "JetBlue's lounge. Check that it is open and access rules before going.",
+      "access_info": "Mint passengers and paid entry (check current terms)",
+      "url": "https://www.jetblue.com/"
+    },
+    {
+      "slug": "t5-restrooms",
+      "name": "Restrooms",
+      "terminal": "5",
+      "category": "restroom",
+      "zone": "airside",
+      "description": "Restrooms throughout the main hall."
+    },
+    {
+      "slug": "t8-admirals-club",
+      "name": "Admirals Club",
+      "terminal": "8",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "American Airlines lounge.",
+      "access_info": "Admirals Club membership, eligible oneworld tickets and status",
+      "url": "https://www.aa.com/"
+    },
+    {
+      "slug": "t8-flagship-lounge",
+      "name": "Flagship Lounge",
+      "terminal": "8",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "American Airlines premium lounge with buffet dining.",
+      "access_info": "Flagship business and first on eligible routes, oneworld Emerald",
+      "url": "https://www.aa.com/"
+    },
+    {
+      "slug": "t8-british-airways-lounge",
+      "name": "British Airways Lounges",
+      "terminal": "8",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "British Airways lounges in Terminal 8.",
+      "access_info": "British Airways / oneworld premium cabins and eligible status",
+      "url": "https://www.britishairways.com/"
+    },
+    {
+      "slug": "t8-bobby-vans-steakhouse",
+      "name": "Bobby Van's Steakhouse",
+      "terminal": "8",
+      "category": "restaurant",
+      "zone": "airside",
+      "description": "Steakhouse with a full bar."
+    },
+    {
+      "slug": "t8-restrooms",
+      "name": "Restrooms",
+      "terminal": "8",
+      "category": "restroom",
+      "zone": "airside",
+      "description": "Restrooms near the gate areas."
+    },
+    {
+      "slug": "t8-coffee-landside",
+      "name": "Coffee counter",
+      "terminal": "8",
+      "category": "cafe",
+      "zone": "landside",
+      "gate_area": "Check-in hall",
+      "description": "Coffee before security. Vendor to be confirmed."
+    }
+  ]
+}

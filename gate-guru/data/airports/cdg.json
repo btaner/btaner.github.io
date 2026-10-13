@@ -1,0 +1,191 @@
+{
+  "airport": {
+    "iata": "CDG",
+    "name": "Paris Charles de Gaulle Airport",
+    "city": "Paris",
+    "country": "France",
+    "timezone": "Europe/Paris"
+  },
+  "terminals": [
+    { "code": "1", "name": "Terminal 1", "sort_order": 1 },
+    { "code": "2E", "name": "Terminal 2E", "sort_order": 2 },
+    { "code": "2F", "name": "Terminal 2F", "sort_order": 3 }
+  ],
+  "facilities": [
+    {
+      "slug": "t1-paul",
+      "name": "PAUL",
+      "terminal": "1",
+      "category": "cafe",
+      "zone": "landside",
+      "description": "French bakery with sandwiches, viennoiseries and coffee."
+    },
+    {
+      "slug": "t1-star-alliance-lounge",
+      "name": "Star Alliance Lounge",
+      "terminal": "1",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "Shared lounge for Star Alliance airlines.",
+      "access_info": "Star Alliance business/first class and Gold status",
+      "url": "https://www.staralliance.com/"
+    },
+    {
+      "slug": "t1-duty-free",
+      "name": "Duty free",
+      "terminal": "1",
+      "category": "shop",
+      "zone": "airside",
+      "description": "Perfume, cosmetics, wine and spirits."
+    },
+    {
+      "slug": "t1-pharmacy",
+      "name": "Pharmacie",
+      "terminal": "1",
+      "category": "pharmacy",
+      "zone": "landside",
+      "description": "Pharmacy before security. Exact name and location to be confirmed."
+    },
+    {
+      "slug": "t1-restrooms",
+      "name": "Restrooms",
+      "terminal": "1",
+      "category": "restroom",
+      "zone": "airside",
+      "description": "Toilets in the boarding satellites."
+    },
+    {
+      "slug": "t1-prayer-room",
+      "name": "Multi-faith worship area",
+      "terminal": "1",
+      "category": "prayer_room",
+      "zone": "landside",
+      "description": "Worship spaces for several faiths.",
+      "url": "https://www.parisaeroport.fr/"
+    },
+    {
+      "slug": "t2e-air-france-lounge-hall-l",
+      "name": "Air France Lounge (Hall L)",
+      "terminal": "2E",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "Hall L",
+      "description": "Large Air France lounge with hot food, bar and spa area.",
+      "access_info": "Air France / SkyTeam business class, Flying Blue Gold/Platinum, SkyTeam Elite Plus",
+      "url": "https://www.airfrance.com/"
+    },
+    {
+      "slug": "t2e-air-france-lounge-hall-k",
+      "name": "Air France Lounge (Hall K)",
+      "terminal": "2E",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "Hall K",
+      "description": "Air France lounge for long-haul departures from Hall K.",
+      "access_info": "Air France / SkyTeam business class, Flying Blue Gold/Platinum, SkyTeam Elite Plus",
+      "url": "https://www.airfrance.com/"
+    },
+    {
+      "slug": "t2e-laduree",
+      "name": "Ladurée",
+      "terminal": "2E",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Hall L",
+      "description": "Macarons, pastries and tea."
+    },
+    {
+      "slug": "t2e-caviar-house-prunier",
+      "name": "Caviar House & Prunier",
+      "terminal": "2E",
+      "category": "bar",
+      "zone": "airside",
+      "description": "Seafood bar with Champagne."
+    },
+    {
+      "slug": "t2e-restaurant-hall-m",
+      "name": "Brasserie",
+      "terminal": "2E",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Hall M",
+      "description": "French brasserie with table service. Exact name to be confirmed."
+    },
+    {
+      "slug": "t2e-paul-landside",
+      "name": "PAUL",
+      "terminal": "2E",
+      "category": "cafe",
+      "zone": "landside",
+      "description": "Bakery and café before security."
+    },
+    {
+      "slug": "t2e-duty-free",
+      "name": "Duty free",
+      "terminal": "2E",
+      "category": "shop",
+      "zone": "airside",
+      "description": "Large duty free with French luxury brands, wine and spirits."
+    },
+    {
+      "slug": "t2e-pharmacy",
+      "name": "Pharmacie",
+      "terminal": "2E",
+      "category": "pharmacy",
+      "zone": "landside",
+      "description": "Pharmacy in the public area. Exact name and location to be confirmed."
+    },
+    {
+      "slug": "t2e-restrooms",
+      "name": "Restrooms",
+      "terminal": "2E",
+      "category": "restroom",
+      "zone": "airside",
+      "gate_area": "Halls K, L, M",
+      "description": "Toilets near each boarding hall."
+    },
+    {
+      "slug": "t2e-charging",
+      "name": "Charging points",
+      "terminal": "2E",
+      "category": "charging",
+      "zone": "airside",
+      "gate_area": "Halls K, L, M",
+      "description": "Outlets and USB points at seating in the boarding halls."
+    },
+    {
+      "slug": "t2f-air-france-lounge",
+      "name": "Air France Lounge",
+      "terminal": "2F",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "Air France lounge for Schengen departures.",
+      "access_info": "Air France / SkyTeam business class, Flying Blue Gold/Platinum, SkyTeam Elite Plus",
+      "url": "https://www.airfrance.com/"
+    },
+    {
+      "slug": "t2f-cafe",
+      "name": "Café",
+      "terminal": "2F",
+      "category": "cafe",
+      "zone": "airside",
+      "description": "Coffee and snacks near the gates. Vendor to be confirmed."
+    },
+    {
+      "slug": "t2f-bar",
+      "name": "Wine bar",
+      "terminal": "2F",
+      "category": "bar",
+      "zone": "airside",
+      "description": "French wines by the glass. Exact name to be confirmed."
+    },
+    {
+      "slug": "t2f-restrooms",
+      "name": "Restrooms",
+      "terminal": "2F",
+      "category": "restroom",
+      "zone": "airside",
+      "description": "Toilets near the gates."
+    }
+  ]
+}

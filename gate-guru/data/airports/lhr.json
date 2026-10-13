@@ -1,0 +1,241 @@
+{
+  "airport": {
+    "iata": "LHR",
+    "name": "London Heathrow Airport",
+    "city": "London",
+    "country": "United Kingdom",
+    "timezone": "Europe/London"
+  },
+  "terminals": [
+    { "code": "2", "name": "Terminal 2", "sort_order": 1 },
+    { "code": "3", "name": "Terminal 3", "sort_order": 2 },
+    { "code": "4", "name": "Terminal 4", "sort_order": 3 },
+    { "code": "5", "name": "Terminal 5", "sort_order": 4 }
+  ],
+  "facilities": [
+    {
+      "slug": "t2-pret-a-manger-landside",
+      "name": "Pret A Manger",
+      "terminal": "2",
+      "category": "cafe",
+      "zone": "landside",
+      "gate_area": "Departures, before security",
+      "description": "Sandwiches, salads and coffee."
+    },
+    {
+      "slug": "t2-leon",
+      "name": "LEON",
+      "terminal": "2",
+      "category": "restaurant",
+      "zone": "airside",
+      "description": "Fast, healthier hot food and breakfast."
+    },
+    {
+      "slug": "t2-united-club",
+      "name": "United Club",
+      "terminal": "2",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "B gates",
+      "description": "United Airlines lounge.",
+      "access_info": "United Club membership, eligible Star Alliance tickets and Gold status",
+      "url": "https://www.united.com/"
+    },
+    {
+      "slug": "t2-plaza-premium-lounge",
+      "name": "Plaza Premium Lounge",
+      "terminal": "2",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "Pay-per-use lounge with food, drinks and showers.",
+      "access_info": "Paid entry, Priority Pass, select credit cards (check current terms)",
+      "url": "https://www.plazapremiumlounge.com/"
+    },
+    {
+      "slug": "t2-boots",
+      "name": "Boots",
+      "terminal": "2",
+      "category": "pharmacy",
+      "zone": "airside",
+      "description": "Pharmacy, toiletries and meal deals."
+    },
+    {
+      "slug": "t2-prayer-room",
+      "name": "Multi-faith prayer room",
+      "terminal": "2",
+      "category": "prayer_room",
+      "zone": "airside",
+      "description": "Prayer room open to all faiths.",
+      "url": "https://www.heathrow.com/"
+    },
+    {
+      "slug": "t2-restrooms",
+      "name": "Restrooms",
+      "terminal": "2",
+      "category": "restroom",
+      "zone": "airside",
+      "description": "Toilets throughout the departures lounge and gate piers."
+    },
+    {
+      "slug": "t3-cathay-pacific-lounge",
+      "name": "Cathay Pacific Lounge",
+      "terminal": "3",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "Cathay Pacific lounge with noodle bar.",
+      "access_info": "Cathay Pacific / oneworld premium cabins and eligible status",
+      "url": "https://www.cathaypacific.com/"
+    },
+    {
+      "slug": "t3-virgin-clubhouse",
+      "name": "Virgin Atlantic Clubhouse",
+      "terminal": "3",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "Virgin Atlantic's flagship lounge with table-service dining and bar.",
+      "access_info": "Virgin Atlantic Upper Class, Flying Club Gold, eligible partner passengers",
+      "url": "https://www.virginatlantic.com/"
+    },
+    {
+      "slug": "t3-emirates-lounge",
+      "name": "Emirates Lounge",
+      "terminal": "3",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "Emirates lounge with direct boarding to the A380.",
+      "access_info": "Emirates first and business class, Skywards Gold and Platinum",
+      "url": "https://www.emirates.com/"
+    },
+    {
+      "slug": "t3-wagamama",
+      "name": "wagamama",
+      "terminal": "3",
+      "category": "restaurant",
+      "zone": "airside",
+      "description": "Ramen, curries and rice bowls."
+    },
+    {
+      "slug": "t3-boots",
+      "name": "Boots",
+      "terminal": "3",
+      "category": "pharmacy",
+      "zone": "airside",
+      "description": "Pharmacy, toiletries and meal deals."
+    },
+    {
+      "slug": "t3-restrooms",
+      "name": "Restrooms",
+      "terminal": "3",
+      "category": "restroom",
+      "zone": "airside",
+      "description": "Toilets in the departures lounge and near gates."
+    },
+    {
+      "slug": "t4-skyteam-lounge",
+      "name": "SkyTeam Lounge",
+      "terminal": "4",
+      "category": "lounge",
+      "zone": "airside",
+      "description": "Shared lounge for SkyTeam airlines.",
+      "access_info": "SkyTeam business/first and Elite Plus status",
+      "url": "https://www.skyteam.com/"
+    },
+    {
+      "slug": "t4-pharmacy-landside",
+      "name": "Boots",
+      "terminal": "4",
+      "category": "pharmacy",
+      "zone": "landside",
+      "gate_area": "Check-in area",
+      "description": "Pharmacy and essentials before security."
+    },
+    {
+      "slug": "t4-cafe-airside",
+      "name": "Coffee shop",
+      "terminal": "4",
+      "category": "cafe",
+      "zone": "airside",
+      "description": "Coffee and pastries in the departures lounge. Vendor to be confirmed."
+    },
+    {
+      "slug": "t4-restrooms",
+      "name": "Restrooms",
+      "terminal": "4",
+      "category": "restroom",
+      "zone": "airside",
+      "description": "Toilets in the departures lounge."
+    },
+    {
+      "slug": "t5-plane-food",
+      "name": "Gordon Ramsay Plane Food",
+      "terminal": "5",
+      "category": "restaurant",
+      "zone": "airside",
+      "description": "Sit-down British restaurant with a picnic-to-go option."
+    },
+    {
+      "slug": "t5-caviar-house-prunier",
+      "name": "Caviar House & Prunier Seafood Bar",
+      "terminal": "5",
+      "category": "bar",
+      "zone": "airside",
+      "description": "Champagne, smoked salmon and seafood plates."
+    },
+    {
+      "slug": "t5-wagamama",
+      "name": "wagamama",
+      "terminal": "5",
+      "category": "restaurant",
+      "zone": "airside",
+      "description": "Ramen, curries and rice bowls."
+    },
+    {
+      "slug": "t5-ba-galleries-club-south",
+      "name": "British Airways Galleries Club South",
+      "terminal": "5",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "A gates",
+      "description": "British Airways business-class lounge.",
+      "access_info": "BA Club World / oneworld business, Executive Club Silver, oneworld Sapphire",
+      "url": "https://www.britishairways.com/"
+    },
+    {
+      "slug": "t5-ba-galleries-first",
+      "name": "British Airways Galleries First",
+      "terminal": "5",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "A gates",
+      "description": "British Airways first-class lounge.",
+      "access_info": "BA First / oneworld first, Executive Club Gold, oneworld Emerald",
+      "url": "https://www.britishairways.com/"
+    },
+    {
+      "slug": "t5-pret-a-manger-landside",
+      "name": "Pret A Manger",
+      "terminal": "5",
+      "category": "cafe",
+      "zone": "landside",
+      "gate_area": "Departures, before security",
+      "description": "Sandwiches, salads and coffee."
+    },
+    {
+      "slug": "t5-boots",
+      "name": "Boots",
+      "terminal": "5",
+      "category": "pharmacy",
+      "zone": "airside",
+      "description": "Pharmacy, toiletries and meal deals."
+    },
+    {
+      "slug": "t5-prayer-room",
+      "name": "Multi-faith prayer room",
+      "terminal": "5",
+      "category": "prayer_room",
+      "zone": "airside",
+      "description": "Prayer room open to all faiths.",
+      "url": "https://www.heathrow.com/"
+    }
+  ]
+}

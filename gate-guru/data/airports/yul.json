@@ -1,0 +1,196 @@
+{
+  "airport": {
+    "iata": "YUL",
+    "name": "Montréal–Trudeau International Airport",
+    "city": "Montreal",
+    "country": "Canada",
+    "timezone": "America/Toronto"
+  },
+  "terminals": [
+    { "code": "DOM", "name": "Domestic Sector", "sort_order": 1 },
+    { "code": "INT", "name": "International Sector", "sort_order": 2 },
+    { "code": "USA", "name": "Transborder (US) Sector", "sort_order": 3 }
+  ],
+  "facilities": [
+    {
+      "slug": "tim-hortons-public-hall",
+      "name": "Tim Hortons",
+      "terminal": "DOM",
+      "category": "cafe",
+      "zone": "landside",
+      "gate_area": "Public hall, departures level",
+      "description": "Coffee, donuts and breakfast sandwiches before security."
+    },
+    {
+      "slug": "starbucks-domestic",
+      "name": "Starbucks",
+      "terminal": "DOM",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Domestic gates",
+      "description": "Espresso drinks and pastries after domestic security."
+    },
+    {
+      "slug": "houston-avenue-bar-grill",
+      "name": "Houston Avenue Bar & Grill",
+      "terminal": "DOM",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Domestic gates",
+      "description": "Sit-down grill with burgers, ribs and a full bar."
+    },
+    {
+      "slug": "maple-leaf-lounge-domestic",
+      "name": "Air Canada Maple Leaf Lounge (Domestic)",
+      "terminal": "DOM",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "Domestic gates",
+      "description": "Air Canada lounge for eligible domestic passengers.",
+      "access_info": "Air Canada / Star Alliance eligible tickets and status, Maple Leaf Club membership",
+      "url": "https://www.aircanada.com/"
+    },
+    {
+      "slug": "desjardins-lounge",
+      "name": "Desjardins Lounge",
+      "terminal": "DOM",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "Domestic gates",
+      "description": "Independent lounge in the domestic sector.",
+      "access_info": "Desjardins Odyssey cardholders, Priority Pass (check current terms), paid day pass"
+    },
+    {
+      "slug": "restrooms-domestic-gates",
+      "name": "Restrooms",
+      "terminal": "DOM",
+      "category": "restroom",
+      "zone": "airside",
+      "gate_area": "Domestic gates",
+      "description": "Restrooms along the domestic pier, including accessible stalls."
+    },
+    {
+      "slug": "charging-domestic-gates",
+      "name": "Charging stations",
+      "terminal": "DOM",
+      "category": "charging",
+      "zone": "airside",
+      "gate_area": "Domestic gate seating",
+      "description": "Power outlets and USB ports built into seating in gate areas."
+    },
+    {
+      "slug": "pharmacy-public-hall",
+      "name": "Pharmacy",
+      "terminal": "DOM",
+      "category": "pharmacy",
+      "zone": "landside",
+      "gate_area": "Public hall",
+      "description": "Pharmacy and travel essentials in the public area. Name and exact location to be confirmed."
+    },
+    {
+      "slug": "multifaith-room",
+      "name": "Multi-faith meditation room",
+      "terminal": "DOM",
+      "category": "prayer_room",
+      "zone": "landside",
+      "gate_area": "Public area",
+      "description": "Quiet room for prayer and reflection, open to all faiths.",
+      "url": "https://www.admtl.com/"
+    },
+    {
+      "slug": "maple-leaf-lounge-international",
+      "name": "Air Canada Maple Leaf Lounge (International)",
+      "terminal": "INT",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "International gates",
+      "description": "Air Canada lounge for international departures.",
+      "access_info": "Air Canada / Star Alliance business class and eligible status",
+      "url": "https://www.aircanada.com/"
+    },
+    {
+      "slug": "national-bank-lounge",
+      "name": "National Bank Lounge",
+      "terminal": "INT",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "International gates",
+      "description": "Independent lounge with food, drinks and runway views.",
+      "access_info": "National Bank World Elite cardholders, Priority Pass (check current terms), paid entry"
+    },
+    {
+      "slug": "duty-free-international",
+      "name": "Duty Free",
+      "terminal": "INT",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "After international security",
+      "description": "Walk-through duty free with spirits, fragrance and Québec products."
+    },
+    {
+      "slug": "vinum-grill",
+      "name": "Vinum Grill",
+      "terminal": "INT",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "International gates",
+      "description": "Grill restaurant and wine bar."
+    },
+    {
+      "slug": "restrooms-international-gates",
+      "name": "Restrooms",
+      "terminal": "INT",
+      "category": "restroom",
+      "zone": "airside",
+      "gate_area": "International gates",
+      "description": "Restrooms throughout the international jetty."
+    },
+    {
+      "slug": "maple-leaf-lounge-transborder",
+      "name": "Air Canada Maple Leaf Lounge (Transborder)",
+      "terminal": "USA",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "US gates",
+      "description": "Air Canada lounge for flights to the United States.",
+      "access_info": "Air Canada / Star Alliance eligible tickets and status",
+      "url": "https://www.aircanada.com/"
+    },
+    {
+      "slug": "starbucks-transborder",
+      "name": "Starbucks",
+      "terminal": "USA",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "US gates",
+      "description": "Coffee after US preclearance."
+    },
+    {
+      "slug": "bar-transborder",
+      "name": "Sports bar",
+      "terminal": "USA",
+      "category": "bar",
+      "zone": "airside",
+      "gate_area": "US gates",
+      "description": "Bar with screens near the transborder gates. Exact name to be confirmed."
+    },
+    {
+      "slug": "news-convenience-transborder",
+      "name": "News & convenience store",
+      "terminal": "USA",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "US gates",
+      "description": "Snacks, drinks, magazines and travel accessories."
+    },
+    {
+      "slug": "restrooms-transborder",
+      "name": "Restrooms",
+      "terminal": "USA",
+      "category": "restroom",
+      "zone": "airside",
+      "gate_area": "US gates",
+      "description": "Restrooms after US preclearance."
+    }
+  ]
+}
