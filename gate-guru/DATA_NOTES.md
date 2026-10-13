@@ -2,7 +2,7 @@
 
 ## Status: unverified
 
-Everything in `data/airports/*.json` (5 airports, 14 terminals/sectors, 108 facilities) was written
+Everything in `data/airports/*.json` (5 airports, 16 terminals/sectors, 108 facilities) was written
 from an AI model's general knowledge, **not** from current airport sources. It has not been checked
 against airport websites, signage, or visits.
 
