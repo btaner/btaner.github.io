@@ -1,6 +1,13 @@
 # Data notes — READ BEFORE PUBLIC LAUNCH
 
-## Status: unverified
+## Status
+
+| Airport | Status |
+| --- | --- |
+| YUL | **Locations verified 2026-10-13** against the official directory (admtl.com/en-CA/directory): 98 venues, zone + nearest gate. Hours not published there, still unknown. Domestic restroom locations unverified. |
+| YYZ, JFK, LHR, CDG | Unverified (model-written, see below) |
+
+## Unverified airports
 
 Everything in `data/airports/*.json` (5 airports, 16 terminals/sectors, 108 facilities) was written
 from an AI model's general knowledge, **not** from current airport sources. It has not been checked
@@ -38,10 +45,9 @@ Do not market the data as accurate until it has been reviewed.
 5. **Hours**: only fill `opening_hours` from an official source. Format:
    `{"mon":[{"open":"05:00","close":"22:00"}], ...}` in airport local time, `[]` for closed that
    day, `close` earlier than `open` for past-midnight, `{"open":"00:00","close":"24:00"}` for 24h.
-6. **Record verification**: the seed script always writes `last_verified_at = null`, so set it in
-   the database after review, e.g.
-   `update facilities set last_verified_at = now() where airport_id = (select id from airports where iata='YUL') and slug in (...);`
-   (A next step is to add `last_verified_at` to the JSON and have the seed respect it.)
+6. **Record verification**: add `"last_verified_at": "YYYY-MM-DD"` to each checked facility in the
+   JSON (the seed writes it; missing = Unverified). Add a top-level `"source"` note saying what was
+   checked and where. Then run `npm run seed -- --prune` so removed venues are deleted too.
 7. **Use the reports table.** "Report an issue" submissions land in `reports`; review them weekly in
    the Supabase table editor:
    `select f.name, a.iata, r.issue_type, r.note, r.created_at from reports r join facilities f on f.id=r.facility_id join airports a on a.id=f.airport_id order by r.created_at desc;`

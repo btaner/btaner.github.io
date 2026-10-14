@@ -56,7 +56,9 @@ npm run seed            # upserts into Supabase using SUPABASE_SERVICE_ROLE_KEY 
 ```
 
 The seed is idempotent. It upserts airports by `iata`, terminals by `(airport, code)` and facilities
-by `(airport, slug)`. It never deletes rows, and it always writes `last_verified_at = null`.
+by `(airport, slug)`, and writes each facility's `last_verified_at` from the JSON (missing = Unverified).
+By default it never deletes. `npm run seed -- --prune` also deletes facilities and terminals that
+are no longer in the JSON (and their reports).
 
 ### Develop
 
@@ -104,7 +106,7 @@ CLI alternative: `npx vercel link` (set root to `gate-guru`), `npx vercel env ad
      24 hours. Leave the whole field out or `null` if unknown. Never guess.
 2. `npm run validate-data` and fix any errors it reports.
 3. `npm run seed`.
-4. After verifying listings, set `last_verified_at` in the database (see DATA_NOTES.md).
+4. After verifying listings, add `"last_verified_at": "YYYY-MM-DD"` to them and re-seed (see DATA_NOTES.md).
 
 ## Project layout
 

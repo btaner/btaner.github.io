@@ -22,6 +22,7 @@ export type SeedFacility = {
   opening_hours: OpeningHours | null;
   access_info: string | null;
   url: string | null;
+  last_verified_at: string | null; // YYYY-MM-DD, null = unverified
 };
 
 export type SeedAirport = {
@@ -33,6 +34,7 @@ export type SeedAirport = {
 const DATA_DIR = path.join(process.cwd(), "data", "airports");
 const TIME = /^([01]\d|2[0-4]):[0-5]\d$/;
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+const DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 type Obj = Record<string, unknown>;
 
@@ -69,6 +71,12 @@ function parseHours(v: unknown, where: string): OpeningHours | null {
     });
   }
   return out;
+}
+
+function parseDate(v: string | null, where: string): string | null {
+  if (v === null) return null;
+  if (!DATE.test(v) || Number.isNaN(Date.parse(v))) throw new Error(`${where}: last_verified_at must be YYYY-MM-DD`);
+  return v;
 }
 
 export function parseSeedAirport(raw: unknown, file: string): SeedAirport {
@@ -124,6 +132,7 @@ export function parseSeedAirport(raw: unknown, file: string): SeedAirport {
       opening_hours: parseHours(f.opening_hours, where),
       access_info: optStr(f, "access_info", where),
       url: optStr(f, "url", where),
+      last_verified_at: parseDate(optStr(f, "last_verified_at", where), where),
     };
   });
 

@@ -1,4 +1,5 @@
 {
+  "source": "Zone and nearest gate checked against https://www.admtl.com/en-CA/directory on 2026-10-13. Opening hours not published there; left unknown.",
   "airport": {
     "iata": "YUL",
     "name": "Montréal–Trudeau International Airport",
@@ -7,37 +8,188 @@
     "timezone": "America/Toronto"
   },
   "terminals": [
-    { "code": "DOM", "name": "Domestic Sector", "sort_order": 1 },
-    { "code": "INT", "name": "International Sector", "sort_order": 2 },
-    { "code": "USA", "name": "Transborder (US) Sector", "sort_order": 3 }
+    {
+      "code": "PUB",
+      "name": "Public area (before security)",
+      "sort_order": 0
+    },
+    {
+      "code": "DOM",
+      "name": "Domestic",
+      "sort_order": 1
+    },
+    {
+      "code": "INT",
+      "name": "International",
+      "sort_order": 2
+    },
+    {
+      "code": "USA",
+      "name": "Transborder (US)",
+      "sort_order": 3
+    }
   ],
   "facilities": [
     {
       "slug": "tim-hortons-public-hall",
       "name": "Tim Hortons",
-      "terminal": "DOM",
+      "terminal": "PUB",
       "category": "cafe",
       "zone": "landside",
-      "gate_area": "Public hall, departures level",
-      "description": "Coffee, donuts and breakfast sandwiches before security."
+      "gate_area": "Arrivals level",
+      "description": "Coffee, donuts, breakfast sandwiches and soups.",
+      "last_verified_at": "2026-10-13"
     },
     {
-      "slug": "starbucks-domestic",
-      "name": "Starbucks",
-      "terminal": "DOM",
-      "category": "cafe",
-      "zone": "airside",
-      "gate_area": "Domestic gates",
-      "description": "Espresso drinks and pastries after domestic security."
+      "slug": "one-minute-arrivals",
+      "name": "1 Minute",
+      "terminal": "PUB",
+      "category": "shop",
+      "zone": "landside",
+      "gate_area": "Arrivals level",
+      "description": "Convenience store at international arrivals: snacks, drinks, coffee and essentials.",
+      "last_verified_at": "2026-10-13"
     },
     {
-      "slug": "houston-avenue-bar-grill",
-      "name": "Houston Avenue Bar & Grill",
-      "terminal": "DOM",
+      "slug": "pub-john-molson",
+      "name": "Pub John Molson",
+      "terminal": "PUB",
+      "category": "bar",
+      "zone": "landside",
+      "gate_area": "Arrivals level",
+      "description": "Molson-themed pub with beer, pizza, sandwiches and salads.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "subway-arrivals",
+      "name": "Subway",
+      "terminal": "PUB",
       "category": "restaurant",
+      "zone": "landside",
+      "gate_area": "Arrivals level",
+      "description": "Made-to-order subs, salads and breakfast.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "ice-currency-exchange-arrivals",
+      "name": "ICE Currency Exchange",
+      "terminal": "PUB",
+      "category": "other",
+      "zone": "landside",
+      "gate_area": "Arrivals level",
+      "description": "Foreign currency exchange.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "cloakroom-arrivals",
+      "name": "Cloakroom",
+      "terminal": "PUB",
+      "category": "other",
+      "zone": "landside",
+      "gate_area": "Arrivals level",
+      "description": "Leave coats, boots and sports gear while you travel.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "java-u-departures",
+      "name": "Java U Café",
+      "terminal": "PUB",
+      "category": "cafe",
+      "zone": "landside",
+      "gate_area": "Departures level",
+      "description": "Coffee, smoothies, sandwiches and pastries.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "la-fabrique-de-bagel",
+      "name": "La Fabrique de Bagel Montréal",
+      "terminal": "PUB",
+      "category": "cafe",
+      "zone": "landside",
+      "gate_area": "Departures level",
+      "description": "Montréal-style bagels, sandwiches and coffee.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "paramount",
+      "name": "Paramount",
+      "terminal": "PUB",
+      "category": "restaurant",
+      "zone": "landside",
+      "gate_area": "Departures level",
+      "description": "Lebanese food with vegan, gluten-free and halal options.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "poulet-rouge",
+      "name": "Poulet Rouge",
+      "terminal": "PUB",
+      "category": "restaurant",
+      "zone": "landside",
+      "gate_area": "Departures level",
+      "description": "Customizable healthy bowls; vegan, gluten-free and halal choices.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "relay-departures-public",
+      "name": "Relay",
+      "terminal": "PUB",
+      "category": "shop",
+      "zone": "landside",
+      "gate_area": "Departures level",
+      "description": "Magazines, snacks, souvenirs and travel essentials.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "tracker",
+      "name": "Tracker",
+      "terminal": "PUB",
+      "category": "shop",
+      "zone": "landside",
+      "gate_area": "Departures level",
+      "description": "Luggage, bags and travel accessories.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "ice-currency-exchange-departures",
+      "name": "ICE Currency Exchange",
+      "terminal": "PUB",
+      "category": "other",
+      "zone": "landside",
+      "gate_area": "Departures level",
+      "description": "Foreign currency exchange.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "biron-health-centre",
+      "name": "Biron Health Centre",
+      "terminal": "PUB",
+      "category": "other",
+      "zone": "landside",
+      "gate_area": "Departures level (SS2)",
+      "description": "Medical clinic and health services. Not a pharmacy; check what services are offered.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "marriott-in-terminal-hotel",
+      "name": "Montréal Airport Marriott In-Terminal Hotel",
+      "terminal": "PUB",
+      "category": "other",
+      "zone": "landside",
+      "gate_area": "Departures level",
+      "description": "Hotel inside the terminal, connected to the US departures pier.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "aspire-amex-lounge",
+      "name": "Aspire | Amex Lounge",
+      "terminal": "DOM",
+      "category": "lounge",
       "zone": "airside",
-      "gate_area": "Domestic gates",
-      "description": "Sit-down grill with burgers, ribs and a full bar."
+      "gate_area": "Near gate 1",
+      "description": "Lounge with on-site craft beer and a chef-designed menu.",
+      "access_info": "American Express cardholders and other eligible guests (check current terms)",
+      "last_verified_at": "2026-10-13"
     },
     {
       "slug": "maple-leaf-lounge-domestic",
@@ -45,20 +197,293 @@
       "terminal": "DOM",
       "category": "lounge",
       "zone": "airside",
-      "gate_area": "Domestic gates",
-      "description": "Air Canada lounge for eligible domestic passengers.",
-      "access_info": "Air Canada / Star Alliance eligible tickets and status, Maple Leaf Club membership",
-      "url": "https://www.aircanada.com/"
+      "gate_area": "Near gate 5",
+      "description": "Air Canada lounge for domestic departures.",
+      "access_info": "Business class passengers and eligible Maple Leaf Club / status members",
+      "url": "https://www.aircanada.com/",
+      "last_verified_at": "2026-10-13"
     },
     {
-      "slug": "desjardins-lounge",
-      "name": "Desjardins Lounge",
+      "slug": "air-canada-cafe-domestic",
+      "name": "Air Canada Café (Domestic)",
       "terminal": "DOM",
       "category": "lounge",
       "zone": "airside",
-      "gate_area": "Domestic gates",
-      "description": "Independent lounge in the domestic sector.",
-      "access_info": "Desjardins Odyssey cardholders, Priority Pass (check current terms), paid day pass"
+      "gate_area": "Near gate 5",
+      "description": "Smaller Air Canada lounge space to relax or work.",
+      "access_info": "Business class passengers and members of eligible programs",
+      "url": "https://www.aircanada.com/",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "starbucks-domestic",
+      "name": "Starbucks",
+      "terminal": "DOM",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 1",
+      "description": "Coffee, cold drinks, pastries and grab-and-go lunch.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "java-u-domestic",
+      "name": "Java U Café",
+      "terminal": "DOM",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 1",
+      "description": "Coffee, smoothies, sandwiches and pastries.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "hatley-domestic",
+      "name": "Hatley",
+      "terminal": "DOM",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 1",
+      "description": "Family clothing and gifts.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "balnea-spa-domestic",
+      "name": "BALNEA Spa Voyage",
+      "terminal": "DOM",
+      "category": "other",
+      "zone": "airside",
+      "gate_area": "Near gate 1",
+      "description": "Massage and spa treatments.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "yul-pizza-gate-2",
+      "name": "YUL Pizza",
+      "terminal": "DOM",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 2",
+      "description": "Pizzas (including breakfast pizza) and salads; vegan and gluten-free options.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "relay-gate-2",
+      "name": "Relay",
+      "terminal": "DOM",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 2",
+      "description": "Magazines, snacks, souvenirs and travel essentials.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "tim-hortons-domestic",
+      "name": "Tim Hortons",
+      "terminal": "DOM",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 3",
+      "description": "Coffee, baked goods and quick meals.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "pork-and-pickle",
+      "name": "Pork & Pickle",
+      "terminal": "DOM",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 3",
+      "description": "Sit-down restaurant and bar with a wood-fired smoker.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "urban-crave-domestic",
+      "name": "Urban Crave",
+      "terminal": "DOM",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 9",
+      "description": "Sit-down street food and bar.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "brasseur-de-montreal",
+      "name": "Brasseur de Montréal",
+      "terminal": "DOM",
+      "category": "bar",
+      "zone": "airside",
+      "gate_area": "Near gate 21",
+      "description": "Brewpub with local craft beers, pizza and salads.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "pronto-mercato",
+      "name": "Pronto! Mercato",
+      "terminal": "DOM",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 21",
+      "description": "Italian sandwiches, coffee and snacks to go.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "heineken-bar",
+      "name": "Heineken Bar",
+      "terminal": "DOM",
+      "category": "bar",
+      "zone": "airside",
+      "gate_area": "Near gate 47",
+      "description": "Bar with draft beer and sit-down meals.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "istore-gate-47",
+      "name": "iStore",
+      "terminal": "DOM",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 47",
+      "description": "Electronics and travel gadgets.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "ice-currency-exchange-gate-47",
+      "name": "ICE Currency Exchange",
+      "terminal": "DOM",
+      "category": "other",
+      "zone": "airside",
+      "gate_area": "Near gate 47",
+      "description": "Foreign currency exchange.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "bistro-montreal-trudeau-domestic",
+      "name": "Bistro Montréal-Trudeau",
+      "terminal": "DOM",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 48",
+      "description": "Urban bistro with local ingredients; breakfast to dinner.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "relay-gate-48",
+      "name": "Relay",
+      "terminal": "DOM",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 48",
+      "description": "Magazines, snacks, souvenirs and travel essentials.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "ryu-domestic",
+      "name": "Ryú",
+      "terminal": "DOM",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 49",
+      "description": "Sushi and Japanese-inspired dishes.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "istore-gate-49",
+      "name": "iStore",
+      "terminal": "DOM",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 49",
+      "description": "Electronics and travel gadgets.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "ice-currency-exchange-gate-49",
+      "name": "ICE Currency Exchange",
+      "terminal": "DOM",
+      "category": "other",
+      "zone": "airside",
+      "gate_area": "Near gate 49",
+      "description": "Foreign currency exchange.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "allo-mon-coco",
+      "name": "Allô mon coco",
+      "terminal": "DOM",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 50",
+      "description": "Breakfast specialist, plus lunch, smoothies and pastries.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "camden-food-co",
+      "name": "Camden Food Co.",
+      "terminal": "DOM",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 50",
+      "description": "Grab-and-go meals with vegan, gluten-free and halal/kosher options.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "mccafe",
+      "name": "McCafé",
+      "terminal": "DOM",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 50",
+      "description": "Espresso drinks, breakfast and pastries.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "thai-express",
+      "name": "Thaï Express",
+      "terminal": "DOM",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 50",
+      "description": "Thai dishes, with vegetarian and vegan choices.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "la-biscuitery-domestic",
+      "name": "La Biscuitery",
+      "terminal": "DOM",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 50",
+      "description": "Cookies, pastries and coffee.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "decouvrir-montreal",
+      "name": "Découvrir Montréal",
+      "terminal": "DOM",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 50",
+      "description": "Montréal souvenirs and clothing.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "archibald-microbrasserie",
+      "name": "Archibald Microbrasserie",
+      "terminal": "DOM",
+      "category": "bar",
+      "zone": "airside",
+      "gate_area": "Near gate 51",
+      "description": "Microbrewery with sit-down meals; reachable from domestic and international gates.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "yul-pizza-gate-51",
+      "name": "YUL Pizza",
+      "terminal": "DOM",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 51",
+      "description": "Pizzas (including breakfast pizza) and salads; vegan and gluten-free options.",
+      "last_verified_at": "2026-10-13"
     },
     {
       "slug": "restrooms-domestic-gates",
@@ -66,36 +491,8 @@
       "terminal": "DOM",
       "category": "restroom",
       "zone": "airside",
-      "gate_area": "Domestic gates",
-      "description": "Restrooms along the domestic pier, including accessible stalls."
-    },
-    {
-      "slug": "charging-domestic-gates",
-      "name": "Charging stations",
-      "terminal": "DOM",
-      "category": "charging",
-      "zone": "airside",
-      "gate_area": "Domestic gate seating",
-      "description": "Power outlets and USB ports built into seating in gate areas."
-    },
-    {
-      "slug": "pharmacy-public-hall",
-      "name": "Pharmacy",
-      "terminal": "DOM",
-      "category": "pharmacy",
-      "zone": "landside",
-      "gate_area": "Public hall",
-      "description": "Pharmacy and travel essentials in the public area. Name and exact location to be confirmed."
-    },
-    {
-      "slug": "multifaith-room",
-      "name": "Multi-faith meditation room",
-      "terminal": "DOM",
-      "category": "prayer_room",
-      "zone": "landside",
-      "gate_area": "Public area",
-      "description": "Quiet room for prayer and reflection, open to all faiths.",
-      "url": "https://www.admtl.com/"
+      "gate_area": null,
+      "description": "Restrooms throughout the domestic area; all have accessible stalls. Exact locations not listed on the airport site."
     },
     {
       "slug": "maple-leaf-lounge-international",
@@ -103,10 +500,91 @@
       "terminal": "INT",
       "category": "lounge",
       "zone": "airside",
-      "gate_area": "International gates",
+      "gate_area": "Near gate 52",
       "description": "Air Canada lounge for international departures.",
-      "access_info": "Air Canada / Star Alliance business class and eligible status",
-      "url": "https://www.aircanada.com/"
+      "access_info": "Business class passengers and eligible Maple Leaf Club / status members",
+      "url": "https://www.aircanada.com/",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "duty-free-gate-52",
+      "name": "Duty Free",
+      "terminal": "INT",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 52",
+      "description": "Fragrance, cosmetics, spirits, accessories and snacks.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "hurleys-international",
+      "name": "Hurleys à YUL",
+      "terminal": "INT",
+      "category": "bar",
+      "zone": "airside",
+      "gate_area": "Near gate 52",
+      "description": "Irish pub known for Guinness, with sit-down meals.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "lauberge-saint-gabriel",
+      "name": "L'Auberge Saint-Gabriel",
+      "terminal": "INT",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 52",
+      "description": "Sit-down restaurant and bar with runway views.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "livia",
+      "name": "Livia",
+      "terminal": "INT",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 52",
+      "description": "Café and matcha bar with healthy food, sushi and bowls.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "montreal-bagel",
+      "name": "Café Montréal Bagel",
+      "terminal": "INT",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 52",
+      "description": "Fairmount-style Montréal bagels, sandwiches and coffee.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "la-biscuitery-international",
+      "name": "La Biscuitery",
+      "terminal": "INT",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 52",
+      "description": "Cookies, pastries and coffee.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "java-u-international",
+      "name": "Java U Café",
+      "terminal": "INT",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 52",
+      "description": "Coffee, smoothies, sandwiches and pastries.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "relay-gate-52",
+      "name": "Relay",
+      "terminal": "INT",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 52",
+      "description": "Magazines, snacks, souvenirs and travel essentials.",
+      "last_verified_at": "2026-10-13"
     },
     {
       "slug": "national-bank-lounge",
@@ -114,27 +592,202 @@
       "terminal": "INT",
       "category": "lounge",
       "zone": "airside",
-      "gate_area": "International gates",
-      "description": "Independent lounge with food, drinks and runway views.",
-      "access_info": "National Bank World Elite cardholders, Priority Pass (check current terms), paid entry"
+      "gate_area": "Near gate 53",
+      "description": "Temporarily relocated near gate 53 during construction.",
+      "access_info": "Check eligibility with the lounge (National Bank cardholders and other programs)",
+      "last_verified_at": "2026-10-13"
     },
     {
-      "slug": "duty-free-international",
+      "slug": "u-bar",
+      "name": "U Bar",
+      "terminal": "INT",
+      "category": "bar",
+      "zone": "airside",
+      "gate_area": "Near gate 53",
+      "description": "Cocktails, local beers and sit-down meals.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "second-cup",
+      "name": "Second Cup",
+      "terminal": "INT",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 53",
+      "description": "Coffee, tea, sandwiches and pastries; self-order kiosks.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "subway-international",
+      "name": "Subway",
+      "terminal": "INT",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 53",
+      "description": "Made-to-order subs, salads and breakfast.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "chocolato",
+      "name": "Chocolato",
+      "terminal": "INT",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 53",
+      "description": "Chocolate-dipped ice cream and desserts.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "istore-gate-53",
+      "name": "iStore",
+      "terminal": "INT",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 53",
+      "description": "Electronics and travel gadgets.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "hatley-international",
+      "name": "Hatley",
+      "terminal": "INT",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 53",
+      "description": "Family clothing and gifts.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "cyber-station",
+      "name": "Cyber Station",
+      "terminal": "INT",
+      "category": "other",
+      "zone": "airside",
+      "gate_area": "Near gate 53",
+      "description": "Gaming lounge with PlayStation 5 and virtual reality stations.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "balnea-spa-international",
+      "name": "BALNEA Spa Voyage",
+      "terminal": "INT",
+      "category": "other",
+      "zone": "airside",
+      "gate_area": "Near gate 53",
+      "description": "Massage and spa treatments.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "ice-currency-exchange-gate-53",
+      "name": "ICE Currency Exchange",
+      "terminal": "INT",
+      "category": "other",
+      "zone": "airside",
+      "gate_area": "Near gate 53",
+      "description": "Foreign currency exchange.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "sunglass-hut",
+      "name": "Sunglass Hut",
+      "terminal": "INT",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 49",
+      "description": "Sunglasses; reachable from domestic and international gates.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "air-france-klm-lounge",
+      "name": "Air France KLM Lounge",
+      "terminal": "INT",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "Near gate 57",
+      "description": "Air France lounge operated by Plaza Premium Group.",
+      "access_info": "Air France / KLM business class and eligible Flying Blue / SkyTeam members (check current terms)",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "maison-de-la-presse-gate-57",
+      "name": "Maison de la Presse",
+      "terminal": "INT",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 57",
+      "description": "Newspapers, books, snacks and travel accessories.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "bistro-montreal-trudeau-international",
+      "name": "Bistro Montréal-Trudeau",
+      "terminal": "INT",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 59",
+      "description": "Urban bistro with local ingredients; breakfast to dinner.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "duty-free-gate-61",
       "name": "Duty Free",
       "terminal": "INT",
       "category": "shop",
       "zone": "airside",
-      "gate_area": "After international security",
-      "description": "Walk-through duty free with spirits, fragrance and Québec products."
+      "gate_area": "Near gate 61",
+      "description": "Perfume, confectionery, liquor and fashion accessories.",
+      "last_verified_at": "2026-10-13"
     },
     {
-      "slug": "vinum-grill",
-      "name": "Vinum Grill",
+      "slug": "upper-crust",
+      "name": "Upper Crust",
       "terminal": "INT",
       "category": "restaurant",
       "zone": "airside",
-      "gate_area": "International gates",
-      "description": "Grill restaurant and wine bar."
+      "gate_area": "Near gate 62",
+      "description": "Sandwiches, pizza and pastries, plus a bar.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "desjardins-odyssey-lounge",
+      "name": "Desjardins Odyssey Lounge",
+      "terminal": "INT",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "Near gate 63",
+      "description": "Lounge for international passengers departing from the international gates.",
+      "access_info": "International passengers; check eligibility and pricing with the lounge",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "duty-free-gate-63",
+      "name": "Duty Free",
+      "terminal": "INT",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 63",
+      "description": "Fragrance, cosmetics, spirits, accessories and snacks.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "starbucks-international",
+      "name": "Starbucks",
+      "terminal": "INT",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 64",
+      "description": "Coffee, cold drinks, pastries and grab-and-go lunch.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "relay-gate-64",
+      "name": "Relay",
+      "terminal": "INT",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 64",
+      "description": "Magazines, snacks, souvenirs and travel essentials.",
+      "last_verified_at": "2026-10-13"
     },
     {
       "slug": "restrooms-international-gates",
@@ -142,8 +795,19 @@
       "terminal": "INT",
       "category": "restroom",
       "zone": "airside",
-      "gate_area": "International gates",
-      "description": "Restrooms throughout the international jetty."
+      "gate_area": "Near gate 65",
+      "description": "Restrooms with a service-animal relief area in front; single-occupant accessible toilets on this pier.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "carlos-and-pepes",
+      "name": "Carlos & Pepe's",
+      "terminal": "INT",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 66",
+      "description": "Mexican and Tex-Mex sit-down restaurant and bar.",
+      "last_verified_at": "2026-10-13"
     },
     {
       "slug": "maple-leaf-lounge-transborder",
@@ -151,10 +815,23 @@
       "terminal": "USA",
       "category": "lounge",
       "zone": "airside",
-      "gate_area": "US gates",
-      "description": "Air Canada lounge for flights to the United States.",
-      "access_info": "Air Canada / Star Alliance eligible tickets and status",
-      "url": "https://www.aircanada.com/"
+      "gate_area": "Near gate 73",
+      "description": "Air Canada lounge for US departures.",
+      "access_info": "Business class passengers and eligible Maple Leaf Club / status members",
+      "url": "https://www.aircanada.com/",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "air-canada-cafe-transborder",
+      "name": "Air Canada Café (Transborder)",
+      "terminal": "USA",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "Near gate 73",
+      "description": "Smaller Air Canada lounge space to relax or work.",
+      "access_info": "Business class passengers and members of eligible programs",
+      "url": "https://www.aircanada.com/",
+      "last_verified_at": "2026-10-13"
     },
     {
       "slug": "starbucks-transborder",
@@ -162,26 +839,19 @@
       "terminal": "USA",
       "category": "cafe",
       "zone": "airside",
-      "gate_area": "US gates",
-      "description": "Coffee after US preclearance."
+      "gate_area": "Near gate 73",
+      "description": "Coffee, cold drinks, pastries and grab-and-go lunch.",
+      "last_verified_at": "2026-10-13"
     },
     {
-      "slug": "bar-transborder",
-      "name": "Sports bar",
+      "slug": "urban-crave-transborder",
+      "name": "Urban Crave",
       "terminal": "USA",
-      "category": "bar",
+      "category": "restaurant",
       "zone": "airside",
-      "gate_area": "US gates",
-      "description": "Bar with screens near the transborder gates. Exact name to be confirmed."
-    },
-    {
-      "slug": "news-convenience-transborder",
-      "name": "News & convenience store",
-      "terminal": "USA",
-      "category": "shop",
-      "zone": "airside",
-      "gate_area": "US gates",
-      "description": "Snacks, drinks, magazines and travel accessories."
+      "gate_area": "Near gate 73",
+      "description": "Sit-down street food and bar.",
+      "last_verified_at": "2026-10-13"
     },
     {
       "slug": "restrooms-transborder",
@@ -189,8 +859,170 @@
       "terminal": "USA",
       "category": "restroom",
       "zone": "airside",
-      "gate_area": "US gates",
-      "description": "Restrooms after US preclearance."
+      "gate_area": "Near gate 73",
+      "description": "Restrooms with a service-animal relief area in front; single-occupant accessible toilets on this pier.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "yul-pizza-gate-74",
+      "name": "YUL Pizza",
+      "terminal": "USA",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 74",
+      "description": "Pizzas (including breakfast pizza) and salads; vegan and gluten-free options.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "maison-de-la-presse-gate-74",
+      "name": "Maison de la Presse",
+      "terminal": "USA",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 74",
+      "description": "Newspapers, books, snacks and travel accessories.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "mc-electronique-gate-74",
+      "name": "MC Electronique",
+      "terminal": "USA",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 74",
+      "description": "Chargers, power banks, headphones and tech accessories.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "duty-free-transborder",
+      "name": "Duty Free",
+      "terminal": "USA",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 75",
+      "description": "Fragrance, cosmetics, spirits, accessories and snacks.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "desjardins-odyssey-plaza-premium-lounge",
+      "name": "Desjardins Odyssey – Plaza Premium Lounge",
+      "terminal": "USA",
+      "category": "lounge",
+      "zone": "airside",
+      "gate_area": "Near gate 76",
+      "description": "Lounge for passengers flying to the United States.",
+      "access_info": "Check eligibility and pricing with the lounge (Plaza Premium / Desjardins programs)",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "relay-gate-76",
+      "name": "Relay",
+      "terminal": "USA",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 76",
+      "description": "Magazines, snacks, souvenirs and travel essentials.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "ice-currency-exchange-gate-76",
+      "name": "ICE Currency Exchange",
+      "terminal": "USA",
+      "category": "other",
+      "zone": "airside",
+      "gate_area": "Near gate 76",
+      "description": "Foreign currency exchange.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "houston-avenue-bar-grill",
+      "name": "Houston Avenue Bar & Grill",
+      "terminal": "USA",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 77",
+      "description": "Steaks, ribs, burgers and a full bar.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "barrafina",
+      "name": "Barrafina – Bar and Tapas",
+      "terminal": "USA",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 79",
+      "description": "Italian-inspired tapas bar, from breakfast to cocktails.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "montreal-sandwich-co",
+      "name": "Montréal Sandwich Co.",
+      "terminal": "USA",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 79",
+      "description": "Montréal classics including smoked meat on rye.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "ryu-transborder",
+      "name": "Ryú",
+      "terminal": "USA",
+      "category": "restaurant",
+      "zone": "airside",
+      "gate_area": "Near gate 79",
+      "description": "Sushi and Japanese-inspired dishes.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "hurleys-transborder",
+      "name": "Hurleys à YUL",
+      "terminal": "USA",
+      "category": "bar",
+      "zone": "airside",
+      "gate_area": "Near gate 81",
+      "description": "Irish pub known for Guinness, with sit-down meals.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "balnea-spa-transborder",
+      "name": "BALNEA Spa Voyage",
+      "terminal": "USA",
+      "category": "other",
+      "zone": "airside",
+      "gate_area": "Near gate 81",
+      "description": "Massage and spa treatments.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "maison-de-la-presse-gate-82",
+      "name": "Maison de la Presse",
+      "terminal": "USA",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 82",
+      "description": "Newspapers, books, snacks and travel accessories.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "mc-electronique-gate-82",
+      "name": "MC Electronique",
+      "terminal": "USA",
+      "category": "shop",
+      "zone": "airside",
+      "gate_area": "Near gate 82",
+      "description": "Chargers, power banks, headphones and tech accessories.",
+      "last_verified_at": "2026-10-13"
+    },
+    {
+      "slug": "starbucks-gate-84",
+      "name": "Starbucks",
+      "terminal": "USA",
+      "category": "cafe",
+      "zone": "airside",
+      "gate_area": "Near gate 84",
+      "description": "Coffee, cold drinks, pastries and grab-and-go lunch.",
+      "last_verified_at": "2026-10-13"
     }
   ]
 }
